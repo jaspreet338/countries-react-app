@@ -2,14 +2,17 @@ import React from 'react';
 //import './App.css';
 import countriesAll from "./countriesAll.json";
 
+
 function App() {
   return (
+    
    <ul>
     {countriesAll.map((country, key) => {
       return <p key={key}>{country.name}</p>
     })}
    </ul>
   );
+  
 }
 
 export default App;
