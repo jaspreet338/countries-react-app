@@ -1,10 +1,19 @@
-import React from 'react';
-const Search = () =>{
+import React, { useState } from 'react';
+const Search = ({searchFunc}) =>{
+    const[searchTerm, setSearchTerm] = useState("");
+
+    function searchTermHandler(event) {
+        setSearchTerm(event.target.value);
+        searchFunc(event.target.value);
+
+    }
 return (
    <div>
     <input 
     type = "text"
-    placeholder="Search for the country"/>
+    value={searchTerm}
+    placeholder="Search for the country"
+    onChange={searchTermHandler}/>
    </div> 
 );
 };
