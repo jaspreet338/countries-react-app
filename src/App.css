@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+.main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  background: whitesmoke;
+  justify-content: space-around;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.countries {
   display: flex;
   flex-direction: column;
+  margin-top: -2rem;
+  border-style: solid;
+  background-color: lightpink;
+}
+.darkMode {
+  display: flex;
+  flex-direction: column;
+  margin-top: -2rem;
+  border-style: solid;
+  background: rgb(55, 55, 56);
+}
+.country-info {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  background: seagreen;
+  margin: 1%;
+  height: 24rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.country-info img {
+  width: 100%;
+  object-fit: cover;
+  height: 11rem;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*.country-dark {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background: rgb(55, 55, 56);
+  margin: 1%;
+  height: 10%;
+  align-items: center;
+  border-radius: 5px;
+}
+*/
+ul {
+  list-style-type: none;
+  padding: 3%;
+  align-self: start;
+  font-size: 16px;
+  margin: 3px;
+}
+li {
+  padding: 3px;
+}
+.input-search {
+  margin-left: 10%;
+  height: 2.8rem;
+  width: 30%;
+  border-radius: 0.4rem;
+  font-size: 20px;
+  font-weight: 900;
+}
+.select-search {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  margin-top: 4rem;
+}
+::placeholder {
+  padding-left: 1%;
+  color: black;
+}
+select {
+  margin-left: 90rem;
+  margin-top: -6.5rem;
+  margin-bottom: 8rem;
+  height: 3rem;
+  width: 15rem;
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 0.4rem;
+  padding-left: 1.5rem;
+}
+h2 {
+  margin-left: 3rem;
+}
+h5 {
+  font-size: 20px;
+  align-self: start;
+  margin-left: 15px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  height: 5rem;
+  background: rgb(255, 255, 255);
+}
+button {
+  border-style: none;
+  background: rgb(255, 255, 255);
+  margin-right: 4rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+.glass {
+  margin-left: -3%;
 }
