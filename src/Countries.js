@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Search from "./Search";
+import SearchResults from "./SearchResults";
 
 const Countries = () => {
 
@@ -27,6 +28,9 @@ const Countries = () => {
     return(
         <div className="App-content">
             <Search searchFunc={search}/>
+            <div className="container">
+                <SearchResults results = {countries}/>
+            </div>
         </div>
     );
 };
