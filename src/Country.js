@@ -5,6 +5,7 @@ const Country = (props) => {
   return (
     <div className="country-info">
       <img src={props.Flag} alt="flags" />
+
       <h5>{props.Name}</h5>
       <ul>
         <li key={3}>

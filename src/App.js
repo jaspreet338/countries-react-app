@@ -10,6 +10,8 @@ function App() {
   const [country, setCountry] = useState(countriesAll);
   const [clicked, setClicked] = useState(true);
 
+  
+
   const clickHandler = () => {
     setClicked(!clicked);
   };
@@ -30,7 +32,7 @@ function App() {
         <h2>Where In The World?</h2>
 
         <button onClick={clickHandler}>
-          Dark Mode <i class="fa-solid fa-moon"></i>
+          Dark Mode <i className="fa-solid fa-moon"></i>
         </button>
       </header>
       <div className="select-search">
@@ -42,7 +44,7 @@ function App() {
           className="input-search"
         ></input>
         <button className="glass">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <i className="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
       <Options data={countriesAll} onSelecting={(country) => setCountry(country)} />
@@ -51,7 +53,7 @@ function App() {
           {country.map((country) => {
             return (
               <Country
-                Flag={country.flag}
+                Flag={country.flags.png}
                 Name={country.name}
                 Population={country.population}
                 Capital={country.capital}

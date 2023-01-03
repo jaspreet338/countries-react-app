@@ -40,17 +40,7 @@
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
 }
-/*.country-dark {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  background: rgb(55, 55, 56);
-  margin: 1%;
-  height: 10%;
-  align-items: center;
-  border-radius: 5px;
-}
-*/
+
 ul {
   list-style-type: none;
   padding: 3%;
